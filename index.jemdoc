@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU}{index.html}
+== Qiming Du 
+
+~~~
+ {}{img_left}{./avatar.png}{photo}{150px}{150px}{}
+ Phd candidate \n
+ in [https://www.lpsm.paris/ LPSM], [http://www.sorbonne-universite.fr/
+ Sorbonne Université].\n
+ qiming "point" du "at" upmc "point" fr\n
+ Bureau 15-16-208 \n
+ 4, Place Jussieu\n 
+ 75005 Paris, France \n
+~~~
+
+
+
+== About me 
+I am a third year Phd candidate
+in [https://www.lpsm.paris/ LPSM], [http://www.sorbonne-universite.fr/ Sorbonne Université],
+supervised by [http://www.lsta.upmc.fr/guyader/
+Arnaud Guyader] and 
+[http://cermics.enpc.fr/~lelievre/ Tony Lelièvre] on rare events estimation
+and its application in molecular simulation. 
+
+
+== Research Interests
+- Sequential Monte Carlo 
+- Adaptive Multilevel Splitting 
+- Genealogy in Interacting Particle System 
+- General theory of Feynman-Kac models
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.node {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+.link {
+  fill: none;
+  stroke: #000;
+}
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+var width = 960,
+    height = 800;
+var tree = d3.layout.tree()
+    .size([width - 20, height - 20]);
+var root = {},
+    nodes = tree(root);
+var depth = 0,
+    iteration = 0;
+root.parent = root;
+root.px = root.x;
+root.py = root.y;
+var diagonal = d3.svg.diagonal();
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .style("margin-left","300px")
+    .append("g")
+    .attr("transform", "translate(10,10)");
+var node = svg.selectAll(".node"),
+    link = svg.selectAll(".link");
+		
+var duration = 1000,
+    timer = setInterval(update, duration);
+function update() {
+  draw()
+}
+  function draw() {
+    // Add a new node to a random parent.
+    var n = {id: nodes.length},
+        p = nodes[Math.random() * nodes.length | 0];
+    var filtered_nodes = nodes.filter(function(d) {return d.depth == depth;});
+    var selected_p = filtered_nodes[Math.random() * filtered_nodes.length | 0];
+    if (selected_p.children) selected_p.children.push(n); 
+    else selected_p.children = [n];
+    nodes.push(n);
+    if (iteration < 5) iteration +=1;
+    else {
+      iteration = 0;
+      depth +=1;
+    }
+    // Recompute the layout and data join.
+    node = node.data(tree.nodes(root), function(d) { return d.id; });
+    link = link.data(tree.links(nodes), function(d) { return d.source.id + "-" + d.target.id; });
+		node.attr("opacity",1);
+   	link.attr("opacity",1);
+    // Add entering nodes in the parent’s old position.
+    node.enter().append("circle")
+        .attr("class", "node")
+        .attr("r", 4)
+        .attr("cx", function(d) { return d.parent.px; })
+        .attr("cy", function(d) { return d.parent.py; })
+    // Add entering links in the parent’s old position.
+    link.enter().insert("path", ".node")
+        .attr("class", "link")
+        .attr("d", function(d) {
+          var o = {x: d.source.px, y: d.source.py};
+          return diagonal({source: o, target: o});
+        })
+		node.exit().remove();
+    link.exit().remove();
+    // Transition nodes and links to their new positions.
+    var t = svg.transition()
+        .duration(duration);
+    t.selectAll(".link")
+        .attr("d", diagonal)
+    t.selectAll(".node")
+        .attr("cx", function(d) { return d.px = d.x; })
+        .attr("cy", function(d) { return d.py = d.y; });
+   
+    if (nodes.length > 200) {
+//       var maxDepth = d3.max(nodes,function(d){ return d.depth});
+//       var last_nodes = nodes.filter(function(d){ return d.depth == maxDepth;});
+//       var selected_node = last_nodes[Math.random() * last_nodes.length | 0];
+      
+//       var highlight_list = []
+//       highlight(selected_node, highlight_list);
+//       var highlight_id = highlight_list.map(function(d) {return d.id;});
+//       nodes = nodes.filter(function(d) {
+//         return highlight_id.indexOf(d.id) !== -1 || d.depth == 0;
+//       });
+//  			console.log(nodes);
+      depth = 0;
+      iteration = 0;
+      root = {};
+      root.parent = root;
+      root.px = root.x;
+      root.py = root.y
+			nodes = tree(root);
+    }
+   }
+  function highlight(node, highlight_list) {
+    highlight_list.push(node);
+		if (node.parent.id) {
+    	highlight(node.parent, highlight_list);
+    }
+  }
+</script>

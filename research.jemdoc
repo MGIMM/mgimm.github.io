@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU}{research.html}
+
+== Publications 
+. Q. Du, and A. Guyader, \"Variance estimation of adaptive sequential monte
+carlo\" (submitted), 2019. \[[./doc/ver7.pdf pdf]\].
+. Q. Du, A. Guyader, and T.Lelièvre,  \"Unbiased variance estimator for
+generalized adaptive multilevel splitting\" (in preperation), 2019.
+
+== Talks in seminars 
+. Groupe de Travail de Thésards du LSTA, Paris, \"Introduction of Feynman-Kac
+particle models\", 2017.
+. Working group of young researchers: statistical physics and interactions, Paris, \"Genalogical tree-typed measures in Feynman-Kac models\", 2017.
+. RESIM 2018: 12th International Workshop on Rare-Event Simulation, Stockholm,
+\"Variance estimation of Adaptive Multilevel Splitting\", 2018.
+. Young Researchers' Meeting in Mathematical Statistics, Paris, \"Variance estimation of Adaptive Multilevel
+Splitting\", 2018.
+. Groupe de Travail de Thésards du LPSM, Paris, \"A brief introduction of
+Sequential Monte Carlo\", 2018.
+
+== Posters
+. CIRM: Advances in Computational Statistical Physics
+Perspectives en physique statistique computationnelle, Marseille, \"Variance
+estimation for generalized adaptive multilevel splitting \", 2018.
+
+== Participation to workshops/conferences
+. Workshop: Simulation and probability: recent trends, Rennes, 2018.
+. LPSM: Conférence de lancement, Paris, 2018.
+
+== Codes
+. Static adaptive multilevel splitting rare-events toolkit. \[[https://github.com/MGIMM/Rare-Events Github]\]
+. Implementation of generalized adaptive multilevel splitting, with variance
+estimation. \[[https://github.com/MGIMM/gams_sim Github]\] 
+. Visulization of Feynman-Kac interacting particle system. (Thanks my wife
+[https://medialab.sciencespo.fr/people/mengying-du/ Mengying Du] for helping me with [https://d3js.org/ d3.js])
+\[[https://github.com/MGIMM/FKPS-Viz Github]\]
+\[[https://mgimm.github.io/FKPS-Viz/ Viz]\]
+
