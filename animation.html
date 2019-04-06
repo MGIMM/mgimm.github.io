@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+
 <style>
 .node {
   stroke: #fff;
@@ -11,6 +13,24 @@
 }
 </style>
 <body>
+  <table summary="Table for page layout." id="tlayout">
+      <tr valign="top">
+      <td id="layout-menu">
+      <div class="menu-item"><a href="index.html">About</a></div>
+      <div class="menu-item"><a href="research.html" class="current">Research</a></div>
+      <div class="menu-item"><a href="teaching.html">Teaching</a></div>
+      <div class="menu-item"><a href="animation.html">Animation</a></div>
+      </td>
+      <td id="layout-content">
+      <div id="viz"></div>  
+      <div id="footer">
+      <div id="footer-text">
+      Page generated 2019-04-05 13:17:45 CEST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+      </div>
+      </div>
+      </td>
+      </tr>
+  </table>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 var width = 960,
@@ -25,7 +45,7 @@ root.parent = root;
 root.px = root.x;
 root.py = root.y;
 var diagonal = d3.svg.diagonal();
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#viz").append("svg")
     .attr("width", width)
     .attr("height", height)
     .style("margin-left","300px")
@@ -83,6 +103,7 @@ function update() {
         .attr("cy", function(d) { return d.py = d.y; });
    
     if (nodes.length > 200) {
+      clearInterval(timer)
 //       var maxDepth = d3.max(nodes,function(d){ return d.depth});
 //       var last_nodes = nodes.filter(function(d){ return d.depth == maxDepth;});
 //       var selected_node = last_nodes[Math.random() * last_nodes.length | 0];
@@ -94,13 +115,13 @@ function update() {
 //         return highlight_id.indexOf(d.id) !== -1 || d.depth == 0;
 //       });
 //  			console.log(nodes);
-      depth = 0;
-      iteration = 0;
-      root = {};
-      root.parent = root;
-      root.px = root.x;
-      root.py = root.y
-			nodes = tree(root);
+      // depth = 0;
+      // iteration = 0;
+      // root = {};
+      // root.parent = root;
+      // root.px = root.x;
+      // root.py = root.y
+			// nodes = tree(root);
     }
    }
   function highlight(node, highlight_list) {

@@ -31,7 +31,7 @@ estimation for generalized adaptive multilevel splitting \", 2018.
 . Implementation of generalized adaptive multilevel splitting, with variance
 estimation. \[[https://github.com/MGIMM/gams_sim Github]\] 
 . Visulization of Feynman-Kac interacting particle system. (Thanks my wife
-[https://medialab.sciencespo.fr/people/mengying-du/ Mengying Du] for helping me with [https://d3js.org/ d3.js])
+[https://github.com/mydu @mydu] for helping me with [https://d3js.org/ d3.js])
 \[[https://github.com/MGIMM/FKPS-Viz Github]\]
 \[[https://mgimm.github.io/FKPS-Viz/ Viz]\]
 
