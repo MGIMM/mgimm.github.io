@@ -2,7 +2,8 @@
 
 == Publications 
 . Q. Du and A. Guyader, \"Variance estimation of Adaptive Sequential Monte
-Carlo\" (submitted), 2019. \[[./doc/ver7.pdf pdf]\].
+Carlo\" (submitted), 2019. \[[./doc/var_asmc.pdf pdf]\].
+. Q. Du \"On the variance of Lazy-jump Sequential Monte Carlo\" (in preperation), 2019. 
 . Q. Du and T. Lelièvre,  \"Unbiased variance estimator for
 generalized adaptive multilevel splitting\" (in preperation), 2019.
 
