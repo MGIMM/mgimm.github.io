@@ -13584,36 +13584,30 @@ $$
 \hat{\tau}^S(\mathbf{x}) = \hat{\mu}_{1}^S(\mathbf{x}) - \hat{\mu}_{0}^S(\mathbf{x}).
 $$</p>
 <h3 id="X-learners:">X-learners:<a class="anchor-link" href="#X-learners:">&#182;</a></h3><p>By estimating the "missing" potential outcomes with the same spirit of
-T-learners, we define
+T-learners, we define</p>
 $$
 \hat{\tau}_{1}^X(\mathbf{x}) :=
 \mathbf{Pred}\left(\mathbf{x} \;|\; \mathcal{M}_{\left\{\mathbf{X}_i \sim
 Y_i - \hat{\mu}_0^T(\mathbf{X}_i) \;|\; W_i = 1,\;i\in [N]\right\}}\right),
-$$
-and
+$$<p>and</p>
 $$
 \hat{\tau}_{0}^X(\mathbf{x}) :=\mathbf{Pred}\left(\mathbf{x} \;|\; \mathcal{M}_{\left\{\mathbf{X}_i \sim
 \hat{\mu}_1^T(\mathbf{X}_i) - Y_i \;|\; W_i = 0,\;i\in [N]\right\}}\right).
-$$
-The final estimator $\hat{\tau}^X$ of $\tau$ is constructed by taking the
-convex combination of the two estimators defined above, that is 
+$$<p>The final estimator $\hat{\tau}^X$ of $\tau$ is constructed by taking the
+convex combination of the two estimators defined above, that is</p>
 $$
 \hat{\tau}^X(\mathbf{x}) :=  g(\mathbf{x})\hat{\tau}_1^X(\mathbf{x}) + (1-g(\mathbf{x}))\hat{\tau}_0^X(\mathbf{x}).
-$$
-For the choice of $g(\mathbf{x})$, one may consider the estimator of the propensity
+$$<p>For the choice of $g(\mathbf{x})$, one may consider the estimator of the propensity
 score $\hat{e}(\mathbf{x})$, or one can simply take $0$ or $1$ according to the data.</p>
-<h3 id="Stage-1:-parametric-models">Stage 1: parametric models<a class="anchor-link" href="#Stage-1:-parametric-models">&#182;</a></h3><p>The only ingredient required for conditional distribution estimation is the conditional mean estimator $\hat{\mu}_0^T$ and $\hat{\mu}_1^T$. However, the estimator for the covariance matrix is of taste as X-learners.
+<h3 id="Stage-1:-parametric-models">Stage 1: parametric models<a class="anchor-link" href="#Stage-1:-parametric-models">&#182;</a></h3><p>The only ingredient required for conditional distribution estimation is the conditional mean estimator $\hat{\mu}_0^T$ and $\hat{\mu}_1^T$. However, the estimator for the covariance matrix is of taste as X-learners.</p>
 $$
-\hat{\sigma}<em>{00}(\mathbf{x})
+\hat{\sigma}_{00}(\mathbf{x})
 :=
-\mathbf{Pred}\left(\mathbf{x}\;|\; \mathcal{M}</em>{\left{\mathbf{X}_i \sim
-Y_i^2 \;|\; W_i = 0,\;i\in [N]\right}}\right)</p>
-<ul>
-<li>\hat{\mu}_0^T(\mathbf{x})^2
+\mathbf{Pred}\left(\mathbf{x}\;|\; \mathcal{M}_{\left\{\mathbf{X}_i \sim
+Y_i^2 \;|\; W_i = 0,\;i\in [N]\right\}}\right)
+- \hat{\mu}_0^T(\mathbf{x})^2
 ,
-$$</li>
-</ul>
-<p>and</p>
+$$<p>and</p>
 $$
 \hat{\sigma}_{11}(\mathbf{x})
 :=
