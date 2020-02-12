@@ -7,3 +7,4 @@
 
 . RDV 07-02-2020 \[[./doc/jupyternb/RDV-07-02-2020.html notebook]\]. 
 . Naive estimator of conditional variance \[[./doc/jupyternb/Estimation-of-Conditional-Variance.html notebook]\]. 
+. A very stupid (slow) implementation of Wasserstein Random Forests with python \[[./doc/jupyternb/WRF-try.html notebook]\]. 
