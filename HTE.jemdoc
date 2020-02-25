@@ -14,3 +14,4 @@
 . WRF at first glance \[[./doc/wrf-try.pdf pdf]\].
 . A python package based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests github]\]. 
 . An all-in-one jupyter notebook. \[[https://github.com/MGIMM/Wasserstein-Random-Forests/blob/master/notebook/All_in_one.ipynb notebook]\].
+. Another look at Breiman's splitting criteria \[[./doc/rf.pdf pdf]\].
