@@ -34,3 +34,4 @@ estimation. \[[https://github.com/MGIMM/gams_sim Github]\]
 \[[https://github.com/MGIMM/FKPS-Viz Github]\]
 \[[https://mgimm.github.io/FKPS-Viz/ Viz]\]
 . Wasserstein Random Forests based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests github]\]. 
+. Adaptive Multilevel Splitting implemented under Asymmetric SMC framework, with efficient variance estimator. \[[https://github.com/MGIMM/aAMS github]\].
