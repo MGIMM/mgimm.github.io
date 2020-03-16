@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU}{HTE.html}
 
 == Domcuments 
-. Minutes on HTE \[[./doc/notes.pdf pdf]\]. 
+. Minutes on HTE \[[./doc/working/notes_protected.pdf pdf]\]. 
 
 == Notebooks
 
@@ -11,7 +11,7 @@
 
 == Wasserstein Random Forests
 
-. WRF at first glance \[[./doc/wrf-try.pdf pdf]\].
+. WRF at first glance \[[./doc/working/wrf-try_protected.pdf pdf]\].
 . A python package based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests github]\]. 
 . An all-in-one jupyter notebook. \[[https://github.com/MGIMM/Wasserstein-Random-Forests/blob/master/notebook/All_in_one.ipynb notebook]\].
-. Another look at Breiman's splitting criteria \[[./doc/rf.pdf pdf]\].
+. Another look at Breiman's splitting criteria \[[./doc/working/rf_protected.pdf pdf]\].
