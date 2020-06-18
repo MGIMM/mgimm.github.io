@@ -3,8 +3,8 @@
 
 ~~~
  {}{img_left}{./me.jpg}{photo}{150px}{150px}{}
- PhD candidate \n
- in [https://www.lpsm.paris/ LPSM], [http://www.sorbonne-universite.fr/
+ Postdoctoral fellow \n
+ at [https://www.lpsm.paris/ LPSM], [http://www.sorbonne-universite.fr/
  Sorbonne Université].\n
  qiming "point" du "at" upmc "point" fr\n
  Bureau 15-16-208 \n
@@ -15,19 +15,17 @@
 
 
 == About me 
-I Will do my Ph.D. defence today (17 June 2020).
-[https://www.lpsm.paris/ LPSM], [http://www.sorbonne-universite.fr/ Sorbonne Université],
-I am supervised by [http://www.lsta.upmc.fr/guyader/
+I am a postdoctoral researcher at [https://www.lpsm.paris/ LPSM], working with [http://www.lpsm.paris/pageperso/biau/ Gérard Biau] and [https://clinicalepidemio.fr/members-of-the-team/raphael-porcher/ Raphaël Porcher].
+I received my Ph.D. degree from [http://www.sorbonne-universite.fr/ Sorbonne Université] in June 2020,
+under the supervision of [http://www.lsta.upmc.fr/guyader/
 Arnaud Guyader] and 
-[http://cermics.enpc.fr/~lelievre/ Tony Lelièvre] on rare events estimation
-and its application in molecular simulation. 
-
+[http://cermics.enpc.fr/~lelievre/ Tony Lelièvre].  
 
 == Research Interests
+- Heterogeneous Treatment Effects
 - Sequential Monte Carlo 
-- Adaptive Multilevel Splitting 
 - Genealogy in Interacting Particle System 
-- General theory of Feynman-Kac models
+- General theory of Feynman-Kac particle models
 
 
 

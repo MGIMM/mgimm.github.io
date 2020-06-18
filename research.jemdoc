@@ -9,7 +9,7 @@ Carlo\" (submitted), 2019. \[[./doc/var_asmc.pdf pdf]\] \[[https://arxiv.org/abs
 
 
 == Ph.D. thesis
-\[[./doc/main.pdf Manuscript]\] \[[./doc/slides.pdf Slides]\]
+\"Sequential Monte Carlo and Applications in Molecular Dynamics.\" \[[./doc/main.pdf Manuscript]\] \[[./doc/slides.pdf Slides]\]
 
 
 == Talks in seminars 
@@ -39,5 +39,5 @@ estimation. \[[https://github.com/MGIMM/gams_sim Github]\]
 [https://github.com/mydu @mydu] for helping me with [https://d3js.org/ d3.js])
 \[[https://github.com/MGIMM/FKPS-Viz Github]\]
 \[[https://mgimm.github.io/FKPS-Viz/ Viz]\]
-. Wasserstein Random Forests based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests github]\]. 
-. Adaptive Multilevel Splitting implemented under Asymmetric SMC framework, with efficient variance estimator. \[[https://github.com/MGIMM/aAMS github]\].
+. Wasserstein Random Forests based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests Github]\]. 
+. Adaptive Multilevel Splitting implemented under Asymmetric SMC framework, with efficient variance estimator. \[[https://github.com/MGIMM/aAMS Github]\].

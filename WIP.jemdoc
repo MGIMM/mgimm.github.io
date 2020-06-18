@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{WIP.html}
+
+== Domcuments 
+. Minutes on HTE \[[./doc/working/notes_protected.pdf pdf]\]. 
+
+== Notebooks
+
+. RDV 07-02-2020 \[[./doc/jupyternb/RDV-07-02-2020.html notebook]\]. 
+. Naive estimator of conditional variance \[[./doc/jupyternb/Estimation-of-Conditional-Variance.html notebook]\]. 
+. A very stupid (slow) implementation of Wasserstein Random Forests with python \[[./doc/jupyternb/WRF-try.html notebook]\]. 
+
+== Wasserstein Random Forests
+
+. WRF at first glance \[[./doc/working/wrf-try_protected.pdf pdf]\].
+. A python package based on NumPy and Cython. \[[https://github.com/MGIMM/Wasserstein-Random-Forests github]\]. 
+. An all-in-one jupyter notebook. \[[https://github.com/MGIMM/Wasserstein-Random-Forests/blob/master/notebook/All_in_one.ipynb notebook]\].
+. Another look at Breiman's splitting criteria \[[./doc/working/rf_protected.pdf pdf]\].
