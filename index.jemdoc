@@ -22,7 +22,7 @@ Arnaud Guyader] and
 [http://cermics.enpc.fr/~lelievre/ Tony Lelièvre]. We mainly investigated the general framework of Sequential Monte Carlo method. The primary motivating application is the Rare-event Simulation in Molecular Dynamics. \[[./doc/main.pdf Manuscript]\] \[[./doc/slides.pdf Slides]\]  
 
 == Research Interests
-- Causal Inference 
+- Nonparametric statistics 
 - Heterogeneous Treatment Effects
 - Sequential Monte Carlo 
 - Genealogy in Interacting Particle System 
