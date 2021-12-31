@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Presentation</title>
+  <style>
+        main {
+width: 60%;
+margin: auto;
+	}
+body {
+font-size:1.2rem;
+}
+    </style>
+</head>
+<body>
+<main>
+<h1>State-Action Balancing in Causal Inference</h1>
+<p>January 13, 2022</p>
+<p>Qiming Du</p>
+<h2 id="abstract">Abstract</h2>
+<p>Policy evaluation is one of the most active research areas in Causal Inference. 
+In the static setting, one collects the state covariates, the actions under unkown sampling
+policy, and the associated causal effects of each individuals. The goal is to estimate the average causal effects of a different target policy. 
+In this presentation, we first introduce the classic Inverse Probabiltiy Weighting (IPW)-type estimator and we illustrate its well-known numerical instability problem.
+Then, we study the recently developped balancing techniques in a static setting. 
+We show that the numerical problem mentioned above can be addressed by
+considering an Integral Probabiltiy Metric (IPM)-based optimization. 
+To conduct theoretical analysis, a new formalism based on Riesz representable measure space is proposed.
+On the one hand, this new theoretical understanding connects differet balancing method in a unified manner.
+On the other hand, it allows us to design new flexible balacing methods, such as
+the neural adversarial balancing powered by deep learning.
+Finally, we introduce a new framework in the multi-stage causal infernce/sequential decision making context, which is capable of dealing with general continuous-value action
+space as well as covariate shifts.
+Different from the classic language in the Reinfocement Learning/Dynamical
+Treatment Regimes context, we emphasize the measure flows and semigroup
+structure in the change of policy procedure, which makes balancing also
+suitable in the dynamical setting.
+For the actual policy evaluation estimators, we study the classical direct estimators, as well as their doubly robust counterparts.
+Their behaviors will be illustrated with different numerical tests.</p>
+<p><strong>Key words</strong>:
+Potential outcomes framework, Dynamical treatment regimes, Off-policy policy evaluation, Reinforcement Learning, Inverse probability weighting, Integral probability metric, Adversarial optimization, Doubly robust estimator.</p>
+<ul>
+<li><a href="./doc/DTRFK.pdf">Preprint</a></li>
+<li><a href="./doc/DTRFK-slides.pdf">Slides</a></li>
+</ul>
+<h2 id="codes-notebook">Codes/Notebook</h2>
+<ul>
+<li><a href="./doc/jupyternb/DTRFK.ipynb">Notebook-Presentation</a>
+</li>
+</br>
+<li><a href="https://github.com/MGIMM/Optimal_Transport_Balancing">Github:OT-Balancing</a>
+</li>
+<li><a href="https://github.com/MGIMM/Mean_Maximum_Discrepancy_Balancing">Github:MMD-Balancing</a></li>
+<li><a href="https://github.com/MGIMM/Neural_Adversarial_Balancing">Github:Neural-Adversarial-Balancing</a></li>
+</ul>
+</main>
+
+</body>
+</html>
+
